@@ -12,12 +12,14 @@ back and verifies the exact bytes.
 
 import os
 
+MAX_CHARS = 120
+
 ENTRY = "DO NOT KNOCK. The ghost in rack 4 is on hold with IT support and has been since 1998."
 
 
 def main() -> None:
     line = ENTRY
-    assert 1 <= len(line) <= 120, f"entry must be 1-120 chars, got {len(line)}"
+    assert 1 <= len(line) <= MAX_CHARS, f"entry must be 1-{MAX_CHARS} chars, got {len(line)}"
     assert "\n" not in line and "\r" not in line, "entry must be a single line"
     assert line.strip(), "entry must not be only whitespace"
 
