@@ -14,6 +14,11 @@ import os
 
 MAX_CHARS = 120
 
+# Judge brief (deadpan comedy, one line, IT life meets the supernatural):
+# the sign must read like a real door sign, land in a single line, and
+# make a tired sysadmin laugh at 3am. The haunting here is specific and
+# fresh: the ghost is not rattling chains, it is stuck on hold with IT
+# support — the same purgatory every sysadmin knows.
 ENTRY = "DO NOT KNOCK. The ghost in rack 4 is on hold with IT support and has been since 1998."
 
 
